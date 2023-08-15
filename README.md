@@ -1,5 +1,5 @@
 # Bank_Atm
-Your project is a simple command-line Bank Management System implemented in Python using classes and functions. The system allows users to perform various banking operations such as creating accounts, depositing funds, withdrawing funds, checking account balances, and transferring funds between accounts. Here's a breakdown of the main components and functionalities:
+A simple command-line Bank Management System implemented in Python using classes and functions. The system allows users to perform various banking operations such as creating accounts, depositing funds, withdrawing funds, checking account balances, and transferring funds between accounts. Here's a breakdown of the main components and functionalities:
 
 1. **Import Statements:**
    - The project starts by importing the necessary classes `Account` and `Bank` along with the `time` module.
@@ -44,4 +44,4 @@ Your project is a simple command-line Bank Management System implemented in Pyth
 11. **Sleep Timer:**
     - After each operation, there's a pause of 2 seconds to provide a smoother user experience.
 
-The project demonstrates fundamental programming concepts such as classes, object instantiation, conditional statements, loops, input/output operations, and basic error handling. It provides users with a basic interface to interact with a simple banking system through the command line.
+This project demonstrates fundamental programming concepts such as classes, object instantiation, conditional statements, loops, input/output operations, and basic error handling. It provides users with a basic interface to interact with a simple banking system through the command line.
