@@ -4,10 +4,10 @@ class Account:
         self.account_holder = account_holder
         self.pin = pin
         self.balance = balance
-        self.daily_withdrawal_total = 0
+        self.daily_withdrawal_total = 0 # Initialize daily withdrawal total to zero
 
     def reset_daily_withdrawal(self):
-        self.daily_withdrawal_total = 0
+        self.daily_withdrawal_total = 0 # Reset daily withdrawl total to zero
 
     def deposit(self, amount):
         self.balance += amount
@@ -52,7 +52,7 @@ class Account:
 class CheckingAccount(Account):
     def __init__(self, account_number, account_holder, pin, balance=0):
         super().__init__(account_number, account_holder, pin, balance)
-        self.account_type = "Checking"
+        self.account_type = "Checking" # Set account type to "Checking"
 
     def __str__(self):
         return f"Checking Account #{self.account_number}"
@@ -60,23 +60,23 @@ class CheckingAccount(Account):
 class SavingsAccount(Account):
     def __init__(self, account_number, account_holder, pin, balance=0):
         super().__init__(account_number, account_holder, pin, balance)
-        self.account_type = "Savings"
+        self.account_type = "Savings" # Set account type to "Savings"
 
     def __str__(self):
         return f"Savings Account #{self.account_number}"
 
 class Bank:
     def __init__(self):
-        self.accounts = []
+        self.accounts = [] # Initialize an empty list to store accounts
 
     def create_account(self, account_number, account_holder, pin, initial_balance, account_type):
         if account_type == "checking":
             new_account = CheckingAccount(account_number, account_holder, pin, initial_balance)
-            self.accounts.append(new_account)
+            self.accounts.append(new_account) # Add the new account to the accounts list
             return "Checking account created successfully."
         elif account_type == "savings":
             new_account = SavingsAccount(account_number, account_holder, pin, initial_balance)
-            self.accounts.append(new_account)
+            self.accounts.append(new_account) # Add the new accountt to the accounts list
             return "Savings account created successfully."
         else:
             return "Invalid account type"
